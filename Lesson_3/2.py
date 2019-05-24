@@ -5,3 +5,9 @@
 (или 0, 3, 4, 5 - если индексация начинается с нуля),
 т.к. именно в этих позициях первого массива стоят четные числа.
 """
+
+import random
+random_array = [random.choice([i for i in range(100)]) for g in range(30)]
+print(f'массив из случайных чисел:\n{random_array}')
+indexes_evens = [random_array.index(i) for i in random_array if i%2==0]
+print(f'Индексы чётных числе массива:\n{indexes_evens}')
