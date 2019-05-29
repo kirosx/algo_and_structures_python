@@ -45,5 +45,6 @@ def prime_with_eratosphen(n):
     
 time_with_er=timeit('prime_with_eratosphen(n)', setup='from __main__ import n, prime_with_eratosphen',number=1000)
 print(f'С решетом {time_with_er} сек')
+print(f'решето неэффективнее в {time_with_er/time_no_er} раз')
 
 #Вычисление простого числа с решетом Эратосфена заняло в 75.5379707852166 больше времени
