@@ -19,7 +19,7 @@ print(f'Чётных цифр: {even_count}\nНечётных цифр: {odd_cou
 
 def odd_even_rec(n,odds=0,evens=0):
  if n==0:
-  print(f'Чётных цифр: {odds}\nНечётных цифр: {evens}')
+  print(f'Чётных цифр: {evens}\nНечётных цифр: {odds}')
   return
  if n%10%2==0:
   evens+=1
