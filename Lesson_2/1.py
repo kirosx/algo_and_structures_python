@@ -9,3 +9,13 @@
 Также сообщать пользователю о невозможности деления на ноль,
 если он ввел 0 в качестве делителя.
 """
+
+d={'+':lambda x,y: x+y,'-':lambda x,y:x-y,'*':lambda x,y:x*y,'/':lambda x,y:x/y,'0':lambda x,y:exit()}
+while True:
+ x, operator, y = input('Введите пример для решения (ex:[6 * 12], символы разделены пробелом, для выхода - оператор "0"):\n').split(' ')
+ if operator == '/' and y == '0':
+  print('На ноль делить нельзя')
+ elif operator not in d:
+  print('неверный оператор')
+ else:
+  print(d[operator](float(x),float(y)))
