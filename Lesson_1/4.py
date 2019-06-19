@@ -8,3 +8,11 @@
 то вводятся эти символы. Программа должна вывести на экран любой
 символ алфавита от 'a' до 'f' включительно.
 """
+
+import random
+intg = random.randint(int(input('Введите нижнюю и верхнюю границы integer:\n')),int(input()))
+print(f'случайное целое число из диапазона: {intg}')
+flt = random.uniform(float(input('Введите нижнюю и верхнюю границы float:\n')),float(input()))
+print(f'случайное вещественное число из диапазона: {flt}')
+a = chr(random.randint(ord(input('Введите символы от `a` до `z`:\n')),ord(input())))
+print(f'случайный символ: {a}')
